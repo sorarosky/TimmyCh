@@ -1,0 +1,177 @@
+/* Col Settings */
+
+/*  GROUPING  */
+.group:before,
+.group:after {
+    content:"";
+    display:table;
+}
+.group:after {
+    clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 */
+}
+
+.col {
+    display: block;
+    float:left;
+    margin-bottom: 32px;
+    margin-left: 0;
+    padding-left:1%;
+    padding-right:1%;
+    &:last-child{
+        margin-bottom: 0;
+    }
+    @media screen and (min-width: $phone_wide) {
+         &:last-child{
+            margin-bottom: 32px;
+        }
+        margin-left: 1.6%;
+    }
+}
+
+.col:first-child { margin-left: 0; } /* all browsers except IE6 and lower */
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: $phone_wide) {
+    .col12 {
+        width: 100%; 
+    }
+    .col11 {
+        width: 100%; 
+    }
+    .col10 {
+        width: 100%; 
+    }
+    .col9 {
+        width: 100%; 
+    }
+    .col8 {
+        width: 100%; 
+    }
+    .col7 {
+        width: 100%; 
+    }
+    .col6 {
+        width: 100%; 
+    }
+    .col5 {
+        width: 100%; 
+    }
+    .col4 {
+        width: 100%; 
+    }
+    .col3 {
+        width: 100%; 
+    }
+    .col2 {
+        width: 100%; 
+    }
+    .col1 {
+        width: 100%; 
+    }
+}
+
+@media screen and (min-width: $phone_wide) {
+    .col12 {
+        width: 100%; 
+    }
+    .col11 {
+        width: 100%; 
+    }
+    .col10 {
+        width: 100%; 
+    }
+    .col9 {
+        width: 100%; 
+    }
+    .col8 {
+        width: 100%;
+        &:nth-child(n+1){
+            margin-left: 0;
+        }
+    }
+    .col7 {
+        width: 100%; 
+    }
+    .col6 {
+        width: 49.2%; 
+    }
+    .col5 {
+        width: 100%; 
+    }
+    .col4 {
+        width: 49.2%; 
+        &:nth-child(2n+1){
+            clear: both;
+            margin-left: 0;
+        }
+    }
+    .col3 {
+        width: 49.2%; 
+    }
+    .col2 {
+        width: 100%; 
+    }
+    .col1 {
+        width: 100%; 
+    }
+}
+
+@media only screen and (min-width: $tablet) {
+    .col12 {
+        width: 100%;
+    }
+
+    .col11 {
+        width: 91.53%;
+    }
+
+    .col10 {
+        width: 83.06%;
+    }
+
+    .col9 {
+        width: 74.6%;
+    }
+
+    .col8 {
+        width: 66.13%;
+    }
+
+    .col7 {
+        width: 57.66%; 
+    }
+
+    .col6 {
+        width: 49.2%; 
+    }
+
+    .col5 {
+        width: 40.73%;
+    }
+    .col4 {
+        width: 32.26%;
+        &:nth-child(2n+1){
+            clear: none;
+            margin-left: 1.6%;
+        }
+        &:nth-child(3n+1){
+            margin-left: 0%;
+        }
+    }
+
+    .col3 {
+        width: 23.8%;
+    }
+
+    .col2 {
+        width: 15.33%;
+    }
+
+    .col1 {
+        width: 6.86%; 
+    }
+}

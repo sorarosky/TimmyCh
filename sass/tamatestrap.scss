@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/*---------------------------------------------------------
+Theme Name: Tamatestrap
+---------------------------------------------------------*/
+
+// Compass
+@import "compass";
+
+// Helper such as mixins
+@import "helpers/mixins";
+
+// Normalize
+@import "reset/reset";
+
+// Partials
+
+//@import "partials/_drawer.scss";
+@import "partials/_common.scss";
+@import "partials/_col.scss";
+@import "partials/_wpfl.scss";
+@import "partials/_custom.scss";
+@import "partials/_sns_button.scss";
