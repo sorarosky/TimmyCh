@@ -6,6 +6,7 @@ body {
     padding: 0;
     font-weight: 300;
     line-height: 1.6em;
+    background-color: #f1f1f1;
 }
 
 /* Custom Fonts */
@@ -100,7 +101,7 @@ img {
     font-size: 12px;
     background-color: $color;
     display: inline;
-    padding: 2% 4%;
+    padding: 1% 4%;
     color: #fff;
     margin: 0 auto;
     border: 0px;
@@ -313,6 +314,10 @@ form{
             background-color:initial; 
         }
     }
+}
+
+.texture{
+    background-image: url("img/bg.png");  
 }
 
 /* Header */
@@ -559,6 +564,9 @@ footer{
     //background-image: url("img/bg_hero.png");
     background-size: cover;
     background-position: center;
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 32px;
+    }
     h1,
     h2{
         color: #fff;
@@ -582,8 +590,12 @@ footer{
     p{
         margin-bottom: 0;
         &.phone{
+            display: block;
             font-size: 10px;
             line-height: 1rem;
+            @media screen and (min-width: $tablet) {
+                display: none;
+            }
         }
         &.pc{
             display: none;
@@ -651,8 +663,13 @@ footer{
 .home{
     &.news{
         background-color: $light_gray;
+        @media screen and (min-width: $tablet) {
+            background-color: #fff;
+        }
         .headline{
             margin-bottom: 0;
+            padding: 4%;
+            padding-bottom: 0;
         }
         ul{
             background-color: #fff;

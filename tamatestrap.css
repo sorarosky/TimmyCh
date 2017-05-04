@@ -32,6 +32,7 @@ body {
   padding: 0;
   font-weight: 300;
   line-height: 1.6em;
+  background-color: #f1f1f1;
 }
 
 /* Custom Fonts */
@@ -138,7 +139,7 @@ img {
   font-size: 12px;
   background-color: #db812e;
   display: inline;
-  padding: 2% 4%;
+  padding: 1% 4%;
   color: #fff;
   margin: 0 auto;
   border: 0px;
@@ -371,6 +372,10 @@ form dl dd {
   margin-bottom: 16px;
   padding: 0;
   background-color: initial;
+}
+
+.texture {
+  background-image: url("img/bg.png");
 }
 
 /* Header */
@@ -702,6 +707,11 @@ footer small {
   background-size: cover;
   background-position: center;
 }
+@media screen and (min-width: 768px) {
+  #hero {
+    margin-bottom: 32px;
+  }
+}
 #hero h1,
 #hero h2 {
   color: #fff;
@@ -726,8 +736,14 @@ footer small {
   margin-bottom: 0;
 }
 #hero p.phone {
+  display: block;
   font-size: 10px;
   line-height: 1rem;
+}
+@media screen and (min-width: 768px) {
+  #hero p.phone {
+    display: none;
+  }
 }
 #hero p.pc {
   display: none;
@@ -799,8 +815,15 @@ footer small {
 .home.news {
   background-color: #f1f1f1;
 }
+@media screen and (min-width: 768px) {
+  .home.news {
+    background-color: #fff;
+  }
+}
 .home.news .headline {
   margin-bottom: 0;
+  padding: 4%;
+  padding-bottom: 0;
 }
 .home.news ul {
   background-color: #fff;
