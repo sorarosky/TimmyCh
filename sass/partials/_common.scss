@@ -17,6 +17,10 @@ body {
     font-style: normal;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 article{
     &.white{
     background-color: $white;
@@ -61,7 +65,7 @@ img {
 }
 
 .blue{
-    color: $blue;
+    color: $color;
 }
 
 .center{
@@ -87,7 +91,7 @@ img {
 }
 
 .btn{
-    background-color: $blue;
+    background-color: $color;
     display: block;
     max-width: 160px;
     padding: 15px 0;
@@ -133,7 +137,7 @@ h4{
 }
 h5{
     font-size: 18px;
-    color: $blue;
+    color: $color;
     margin-bottom: 8px;
 }
 h6{
@@ -244,13 +248,13 @@ pre {
     @include clearfix;
     a{
         display: block;
-        color:$blue;
+        color:$color;
         padding: 12px 16px;
         width: 48px;
         float: left;
         text-align: center;
         &.current{
-            background-color:$blue;
+            background-color:$color;
             color: #fff;
         }
         &.prev{
@@ -258,7 +262,7 @@ pre {
             height: 0;
             padding: 0;
             border: 24px solid transparent;
-            border-right: 32px solid $blue;
+            border-right: 32px solid $color;
             margin-left: -24px;
         }
         &.next{
@@ -266,7 +270,7 @@ pre {
             height: 0;
             padding: 0;
             border: 24px solid transparent;
-            border-left: 32px solid $blue;
+            border-left: 32px solid $color;
         }
     }
 }
@@ -309,28 +313,27 @@ form{
 /* Header */
 header{
     @include clearfix;
-    @include screen;
     min-height: $header_height;
     position: fixed;
     width: 100%;
     z-index: 9999;
+    background-color: #2a2a2a;
     .logo{
         float: left;
-        margin-right: 4%;
-        width: 80px;
+        width: 224px;
         color: #fff;
-        font-size: 24px;
         line-height: 1.6em;
-        margin-top: 11px;
         font-weight: 700;
-        @media screen and (min-width: $tablet_wide) {
-            margin-right: 8%;
+        h1{
+            font-size: 20px;
+            line-height: $header_height;
+            margin-bottom: 0;
         }
     }
     nav{
         display: none;
         float: left;
-        width: 64%;
+        background-color: #3f3f3f;
         @media screen and (min-width: 950px) {
             display: block;
         }
@@ -341,22 +344,12 @@ header{
             margin-bottom: 0;
             li{
                 float: left;
-                margin-right: 4%;
-                line-height: 60px;
-                font-size: 16px;
+                line-height: $header_height;
+                font-size: 15px;
                 letter-spacing: 0px;
                 font-weight: 400;
-                @media screen and (min-width: 800px) {
-                    font-size: 17px;
-                }
-                @media screen and (min-width: $tablet_wide) {
-                    margin-right: 4%;
-                }
-                @media screen and (min-width: $pc) {
-                    font-size: 18px;
-                    font-weight: 400;
-                    letter-spacing: .5px;
-                }
+                text-align: center;
+                padding: 0 16px;
                 &:last-child{
                     margin-right: 0;
                 }
@@ -375,27 +368,53 @@ header{
             }
         }
     }
-    .sns{
+    aside{
         @include clearfix;
         display: none;
+        width: 340px;
         float: right;
-        margin-top: 18px;
         @media screen and (min-width: 950px) {
             display: block;
         }
-        a{
-            display: block;
-            float: left;
-            width: 26px;
-            margin-left: 16px;
-            &:first-child{
-                margin-left: 0;
+        .search{
+            @include clearfix;
+            max-width: 200px;
+            float: right;
+            input[type="text"]{
+                width: 100%;
+                background: initial;
+                padding: 8%;
+                float: left;
+                margin-right: -36px;
+                color: #fff;
+                border-radius: 2px;
+                -moz-border-radius: 2px;
+                -webkit-border-radius: 2px;
+                -o-border-radius: 2px;
+                -ms-border-radius: 2px;
+                box-shadow: none;
             }
-            &:hover{
-                opacity: 1;
+            input[type="submit"]{
+                width: 20px;
+                height: 20px;
+                background: url(img/search.png);
+                border: none;
+                margin-top: 13px;
+                background-size: 100%;
             }
-            @media screen and (min-width: $pc) {
-                margin-left: 24px;
+        }
+        .lang{
+            @include clearfix;
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+            li{
+                float: left;
+                font-size: 14px;
+                line-height: $header_height;
+                a{
+                    color: #fff;
+                }
             }
         }
     }
@@ -520,33 +539,6 @@ footer{
             width: 73px;
         }
     }
-    .search{
-        @include clearfix;
-        max-width: 200px;
-        margin: 0 auto 32px;
-        input[type="text"]{
-            width: 100%;
-            background: initial;
-            padding: 8%;
-            float: left;
-            margin-right: -36px;
-            color: #fff;
-            border-radius: 2px;
-            -moz-border-radius: 2px;
-            -webkit-border-radius: 2px;
-            -o-border-radius: 2px;
-            -ms-border-radius: 2px;
-            box-shadow: none;
-        }
-        input[type="submit"]{
-            width: 20px;
-            height: 20px;
-            background: url(img/search.png);
-            border: none;
-            margin-top: 13px;
-            background-size: 100%;
-        }
-    }
     .sns{
         @include clearfix;
         max-width: 200px;
@@ -571,7 +563,8 @@ footer{
 }
 
 #hero{
-    background-image: url("img/bg_hero.png");
+    background-color: #ccc;
+    //background-image: url("img/bg_hero.png");
     background-size: cover;
     background-position: center;
     h1,
