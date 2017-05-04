@@ -4,17 +4,18 @@
 <meta charset="UTF-8">
 <title></title>
 <link rel="stylesheet" href="tamatestrap.css">
+<meta name="viewport" content="width=device-width,user-scalable=0">
 <link href="https://fonts.googleapis.com/css?family=Lato::100,300,400|Open+Sans:300i,400"" rel="stylesheet" type="text/css">
 </head>
 <body>
 <header>
 	<div class="screen">
 	<div class="inner">	
-		<a class="logo" href="index.html"><h1>Timmy Tamate <span>Channel</span></h1></a>
+		<a class="logo" href="index.html"><h1>Timmy Tamate <span class="color">Channel</span></h1></a>
 		<aside>
 			<div class="search">
 				<form action="">
-				    <input type="text" size="" name="" value="Search..." />
+				    <input type="text" size="" name="" value="検索する" />
 				    <input type="submit" value="" />
 				</form>
 			</div><!-- .search -->
@@ -25,72 +26,93 @@
 		</aside>
 		<nav>
 		<ul>
-			<li class="current-menu-item"><a href="#">海外・英語ブログ</a></li>
+			<li class="current-menu-item"><a href="#"><span>海外・</span>英語ブログ</a></li>
 			<li><a href="#">英文法ビデオ </a></li>
-			<li><a href="#">ポッドキャスト相談室</a></li>
+			<li><a href="#">ポッドキャスト<span>相談室</span></a></li>
 		</ul>
 		</nav>
 		
 	</div><!-- .inner -->
 	</div><!-- .screen -->
 </header>
-<div class="inner fixed_nav">
+<div id="contents" class="fixed_nav">
 	<div class="group">
-		<div class="col col8">
+		<div id="left" class="col col8">
 			<article id="hero">
-				<div class="screen">
-					<div class="group">
-						<div class="col col7">
-							<h1>Timmy Tamate Channel</h1>
-							<h2 class="tagline">ティミー玉手がバンクーバーから配信するブログ、ビデオ、ポッドキャストです。</h2>
-							<p>海外生活10年。<span>ビジネス英語</span>や<span>海外就職・留学</span>の独自のノウハウを公開！</p>
-						</div><!-- .col7 -->
-					</div><!-- .group -->
+				<div class="screen padding">
+					<div class="inner">
+						<div class="group">
+							<div class="col col7">
+								<h1>Timmy Tamate <span class="color">Channel</span></h1>
+								<h2 class="tagline">ティミー玉手がバンクーバーから配信する<br>ブログ、ビデオ、ポッドキャストです。</h2>
+								<p class="phone">英語学習のコツや海外生活のノウハウなど知ってお得な情報満載ブログ!!</p>
+								<p class="pc">海外生活10年。<span>ビジネス英語</span>や<span>海外就職・留学</span>の独自のノウハウを公開！</p>
+							</div><!-- .col7 -->
+						</div><!-- .group -->
+					</div><!-- .inner -->
 				</div><!-- .screen -->
 			</article><!-- #hero -->
-			<article id="news">
-				<h2>新着情報</h2>
-				<a href="#">新着一覧を見る ></a>
-				<ul>
+			<article class="home news">
+				<section class="headline padding">
+					<h2>新着情報</h2>
+					<a class="btn" href="#">新着一覧を見る ></a>
+				</section><!-- .headline -->
+				<ul class="padding">
 					<li>
-						<time>2017/4/25</time>:<p><span>ブログ</span>「海外で買ったスマフォが日本で使えない！？注意したい3つの事！！！」を更新。</p>
+						<time>2017/4/25</time><span>ブログ</span><br><a href="#">「海外で買ったスマフォが日本で使えない！？注意したい3つの事！！！」を更新。</a>
 					</li>
 					<li>
-						<time>2017/4/24</time>:<p><span>お知らせ</span>6月23日にティミー玉手の海外就職セミナーが開催されます。詳細はこちら！</p>
+						<time>2017/4/24</time><span>お知らせ</span><br><a href="#">6月23日にティミー玉手の海外就職セミナーが開催されます。詳細はこちら！</a>
 					</li>
 					<li>
-						<time>2017/4/22</time>:<p><span>ビデオ</span>「第3文型はUFOキャッチャー？ 」を公開しました。</p>
+						<time>2017/4/22</time><span>ビデオ</span><br><a href="#">「第3文型はUFOキャッチャー？ 」を公開しました。</a>
 					</li>
 					<li>
-						<time>2017/4/20</time>:<p><span>ポッドキャスト</span>お悩み相談室 Vol.5 - 明日からN.Y攻めっから！」を配信。</p>
+						<time>2017/4/20</time><span>ポッドキャスト</span><br><a href="#">お悩み相談室 Vol.5 - 明日からN.Y攻めっから！」を配信。</a>
 					</li>
 					<li>
-						<time>2017/4/18</time>:<p><span>ブログ</span>「ネイティブの会話を聞き取れるリスニング力をつけるために外せない３つの対策」を更新。</p>
+						<time>2017/4/18</time><span>ブログ</span><br><a href="#">「ネイティブの会話を聞き取れるリスニング力をつけるために外せない３つの対策」を更新。</a>
 					</li>
 				</ul>
 			</article><!-- #news -->
-			<article id="blog">
-				<section class="headline">
-					<div class="group">
-						<h3 class="col col3">Timmy Tamate Blog</h3><!-- .col3 -->
-						<div class="col col6">英語学習や海情報満載のブログ を公開中!!</div><!-- .col6 -->
-						<a class="col col3">全ての記事を読む ></a><!-- .col3 -->
-					</div><!-- .group -->
+			<article class="home blog">
+				<section class="headline screen">
+					<h3>Timmy Tamate <span class="color">Blog</span></h3>
+					<p class="caption">英語学習や海情報満載のブログ を公開中!!</p>
+					<a class="btn" href="#">全ての記事を読む ></a>
 				</section><!-- .headline -->
-				<div class="group">
+				<div class="group padding">
 					<section class="col col4">
-						<img src="img/thumb.jpg" alt="thumbnail">
+						<img src="img/thumb.jpg" class="thumbnail" alt="thumbnail">
 						<h4>海外で買ったスマフォが日本で使えない！？スマフォを買う時に注意したい3つの事！！！</h4>
+						<time>2017/4/25</time>
+						<ul　class="tag">
+							<li><a href="#">NEW!</a></li>
+							<li><a href="#">スマフォ</a></li>
+							<li><a href="#">海外</a></li>
+						</ul><!-- .tag -->
 						<a href="#">2017/4/25の記事を読む ></a>
 					</section><!-- .col4 -->
 					<section class="col col4">
-						<img src="img/thumb.jpg" alt="thumbnail">
+						<img src="img/thumb.jpg" class="thumbnail" alt="thumbnail">
 						<h4>ネイティブの会話を聞き取れるリスニング力をつけるために外せない３つの対策</h4>
+						<time>2017/4/25</time>
+						<ul　class="tag">
+							<li><a href="#">NEW!</a></li>
+							<li><a href="#">スマフォ</a></li>
+							<li><a href="#">海外</a></li>
+						</ul><!-- .tag -->
 						<a href="#">2017/4/25の記事を読む ></a>
 					</section><!-- .col4 -->
 					<section class="col col4">
-						<img src="img/thumb.jpg" alt="thumbnail">
-						<h4>英文メール、英語のビジネス文書で抑えておきたいKISSの奥義と絶対に守るべき５カ条<h4>
+						<img src="img/thumb.jpg" class="thumbnail" alt="thumbnail">
+						<h4>英文メール、英語のビジネス文書で抑えておきたいKISSの奥義と絶対に守るべき５カ条</h4>
+						<time>2017/4/25</time>
+						<ul　class="tag">
+							<li><a href="#">NEW!</a></li>
+							<li><a href="#">スマフォ</a></li>
+							<li><a href="#">海外</a></li>
+						</ul><!-- .tag -->
 						<a href="#">2017/4/25の記事を読む ></a>
 					</section><!-- .col4 -->	
 				</div><!-- .group -->
@@ -176,7 +198,7 @@
 				</div><!-- .group -->
 			</article><!-- #podcast -->
 		</div><!-- .col8 -->
-		<div class="col col4">
+		<div id="right" class="col col4">
 			<article id="profile">
 				<h4>管理人・ティミー玉手について</h4>
 				<img src="img/face.png" alt="TimmyTamate">

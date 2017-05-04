@@ -1,11 +1,13 @@
 /*--------------color--------*/
-$base: #392701;
+$base: #000;
 $link: #888;
 $light_gray: #d8d8d9;
 $dark_gray:#504941;
 $border: #ccc;
 $white: #FFF;
-$gray: #f2f2f2;
+$gray: #3f3f3f;
+$light_gray: #f1f1f1;
+$black: #2a2a2a;
 $color: #db812e;
 $current: #db812e;
 
@@ -21,4 +23,5 @@ $pc_wide: 1400px;
 $aside_wide: 280px;
 
 /*--------------header_height--------*/
- $header_height: 70px;
+$header_height_phone: 50px;
+$header_height: 70px;
